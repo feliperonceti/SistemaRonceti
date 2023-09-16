@@ -9,14 +9,16 @@ package view;
  *
  * @author u16670287666
  */
-public class JDlgCompra extends javax.swing.JDialog {
+public class JDlgCompraProdutoFgv extends javax.swing.JDialog {
 
     /**
-     * Creates new form JDlgCompra
+     * Creates new form JDlgCompraProduto
      */
-    public JDlgCompra(java.awt.Frame parent, boolean modal) {
+    public JDlgCompraProdutoFgv(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
-        initComponents();
+         initComponents();
+        setLocationRelativeTo(null);
+        setTitle("Compra Produto");
     }
 
     /**
@@ -61,20 +63,21 @@ public class JDlgCompra extends javax.swing.JDialog {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(JDlgCompra.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JDlgCompraProdutoFgv.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(JDlgCompra.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JDlgCompraProdutoFgv.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(JDlgCompra.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JDlgCompraProdutoFgv.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(JDlgCompra.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JDlgCompraProdutoFgv.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the dialog */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                JDlgCompra dialog = new JDlgCompra(new javax.swing.JFrame(), true);
+                JDlgCompraProdutoFgv dialog = new JDlgCompraProdutoFgv(new javax.swing.JFrame(), true);
                 dialog.addWindowListener(new java.awt.event.WindowAdapter() {
                     @Override
                     public void windowClosing(java.awt.event.WindowEvent e) {
